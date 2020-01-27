@@ -1,5 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.disappear {
+    display: none;
+}
+
+.reappear {
+    display: block;
+}
+
 .jumbo {
-    width: 60%;
+    position: relative;
+    width: 90%;
     margin: 25px auto;
     box-shadow: 0 10px 6px -6px #777;
 }
@@ -16,7 +30,7 @@
 .name-form {
     height: 150px;
     border-radius: 5px;
-    padding: 25px;
+    padding: 25px 10px 25px 150px;
     background-color: #e9ecef;
 }
 
@@ -24,6 +38,34 @@
     display: flex;
     margin: 20px;
     width: 75%;
+    padding-left: 80px;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.card-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.my-card {
+    background-color: #e9ecef;
+    box-shadow: 0 10px 6px -6px #777;
+    height: 200px;
+    margin: 5px;
+    overflow: hidden;
+}
+
+.my-card:hover {
+    box-shadow: 0 15px 25px -6 rgba(0,0,0,0.2);
+    filter: brightness(105%);
+}
+
+.body-card {
+    position: relative;
+    top: 15px;
 }

@@ -10,26 +10,28 @@
 </head>
 <body>
     <main>
-        <div class="jumbotron jumbo">
-            <h1 class="display-4">Welcome to Hog Warts!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <div class="lead">
-              <button id="show-form" class="btn btn-primary btn-lg">Let's Get Started!</button>
-            </div>
+      <div class="jumbotron jumbo">
+        <h1 class="display-4">Welcome to Hog Warts!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <div class="lead">
+            <button id="show-form" class="btn btn-primary btn-lg">Let's Get Started!</button>
+        </div>
+      </div>
+      <form id="name-form" class="jumbo name-form disappear">
+          <header>
+              <h2>Enter First Year's Name</h2>
+          </header>
+          <div class="form-group name-box">
+            <label for="studentName">Student:</label>
+            <input type="text" class="form-control form-box" id="student-name" aria-describedby="userName">
+            <button id="sort-student" class="btn btn-primary">Sort!</button>
           </div>
-          <form class="jumbo name-form">
-              <header>
-                  <h2>Enter First Year's Name</h2>
-              </header>
-            <div class="form-group name-box">
-              <label for="studentName">Student:</label>
-              <input type="text" class="form-control form-box" id="studentName" aria-describedby="userName">
-              <button id="sort-student" class="btn btn-primary">Sort!</button>
-            </div>
-          </form>
-          <div id="root"></div>
+      </form>
+      <div id="root" class="card-container">
+
+      </div>
     </main>
     <footer class="page-footer">
         <p>@ David Everett 2020</p>
