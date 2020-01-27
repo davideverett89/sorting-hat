@@ -1,6 +1,6 @@
 const showForm = () => {
     let element = document.getElementById("name-form");
-    element.classList.toggle("disappear");
+    element.classList.remove("disappear");
 }
 
 const printToDOM = (name, house) => {
@@ -13,15 +13,7 @@ const printToDOM = (name, house) => {
             </div>
         </div>`;
     document.getElementById("student-name").value = "";
-    let DOMarray = document.getElementsByClassName("expel-button");
-    console.log(DOMarray);
 }
-
-// const sorter = (name) => {
-//     const houses = ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"];
-//     let randomNum = Math.floor(Math.random() * houses.length);
-//     printToDOM(name, houses[randomNum]);
-// }
 
 const sortStudent = () => {
     const houses = ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"];
@@ -30,6 +22,20 @@ const sortStudent = () => {
     (studentName === "" || studentName === " ") ? alert("Please enter a name.") : printToDOM(studentName, houses[randomNum]);
 }
 
+// const removeStudent = () => {
+//     this.parentElement.parentNode.classList.add("disappear");
+// }
+
+// const clickListener = () => {
+//     let DOMarray = document.getElementsByClassName("expel-button");
+//     for (let i = 0; i < DOMarray.length; i++) {
+//         DOMarray[i].addEventListener("click", removeStudent);
+//         console.log(DOMarray[i].parentElement.parentNode);
+//     }
+// }
+
 
 document.getElementById("show-form").addEventListener("click", showForm);
 document.getElementById("sort-student").addEventListener("click", sortStudent);
+
+
