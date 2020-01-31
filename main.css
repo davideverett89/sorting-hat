@@ -13,8 +13,8 @@
 
 .jumbo {
     position: relative;
-    width: 90%;
-    margin: 25px auto;
+    width: 85%;
+    margin: 10px auto;
     box-shadow: 0 10px 6px -6px #777;
 }
 
@@ -44,11 +44,9 @@
 }
 
 .card-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    width: 75%;
+    width: 86%;
     margin: 0 auto;
 }
 
@@ -56,17 +54,26 @@
     background-color: #e9ecef;
     box-shadow: 0 10px 6px -6px #777;
     height: 200px;
-    width: 200px;
-    margin: 5px;
+    width: 32%;
+    margin: 9px;
     overflow: hidden;
 }
 
-.my-card:hover {
+/* .my-card:hover {
     box-shadow: 0 15px 25px -6 rgba(0,0,0,0.2);
     filter: brightness(105%);
-}
+} */
 
 .body-card {
     position: relative;
-    top: 15px;
+}
+
+.btn-class {
+    width: 125px;
+    height: 75px;
+}
+
+.voldemort {
+    font-family: 'Noto Serif SC', serif;
+    font-size: x-large;
 }
