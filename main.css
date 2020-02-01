@@ -8,13 +8,21 @@ body {
     font-family: 'Cinzel', serif;
 }
 
-.disappear {
+.visible {
+    visibility: visible !important;
+  }
+
+.invisible {
+    visibility: hidden;
+  }
+
+/* .disappear {
     display: none;
 }
 
 .reappear {
     display: block;
-}
+} */
 
 .jumbo {
     color: #2A3D45;
@@ -53,7 +61,6 @@ body {
 
 .card-container {
     justify-content: center;
-    height: 100%;
     margin: 0 auto;
 }
 
@@ -62,14 +69,10 @@ body {
     background-color: #e9ecef;
     box-shadow: 10px 15px 8px -6px rgb(34, 34, 34);
     height: 200px;
-    width: 32%;
     margin: 9px;
     overflow: hidden;
 }
 
-.body-card {
-    position: relative;
-}
 
 .btn-class {
     width: 125px;
@@ -77,13 +80,17 @@ body {
 }
 
 .new-name {
-    font-size: xx-large;
+    font-size: 35px;
+}
+
+.new-house {
+    font-size: 25px;
 }
 
 .Gryffindor {
     background: url(https://lh3.googleusercontent.com/proxy/RDhqWtbAMG-SYdods1xtLMWd8BhP7qd9BfSI9pPur88s4v6CooAOYZkeSJVsESRUqP3sB_ONk2lDx6OF6HhFwQncyMhGeKmW5oTXmoNTS5rdSaTiaxtjzq4sNYM8-fEiXUWCyy3BexgNw3gfxuYZfwoS-ZUqgqlKKOBmftocy7J01tuMXBUZr0pkzJ2Gm4SueQ);
     background-repeat: no-repeat;
-    background-size: 370px 205px;
+    background-size: 404px 205px;
     color: white;
     font-weight: 700;
     font-size: x-large;
@@ -97,7 +104,7 @@ body {
 .Hufflepuff {
     background: url(https://wallpapercave.com/wp/wp1958758.png);
     background-repeat: no-repeat;
-    background-size: 370px 205px;
+    background-size: 404px 205px;
     color: white;
     font-weight: 700;
     font-size: x-large;
@@ -111,7 +118,7 @@ body {
 .Ravenclaw {
     background: url(https://cdn.hipwallpaper.com/i/94/0/hJAjKC.jpg);
     background-repeat: no-repeat;
-    background-size: 370px 205px;
+    background-size: 404px 205px;
     color: white;
     font-weight: 700;
     font-size: x-large;
@@ -125,7 +132,7 @@ body {
 .Slytherin {
     background: url(https://www.lefthudson.com/wp-content/uploads/2019/11/slytherin-desktop-wallpaper-new-slytherin-wallpaper-hd-this-month-of-slytherin-desktop-wallpaper.jpg);
     background-repeat: no-repeat;
-    background-size: 370px 205px;
+    background-size: 404px 205px;
     color: white;
     font-weight: 700;
     font-size: x-large;
@@ -141,11 +148,6 @@ body {
 }
 
 .voldemort {
-    /* background: url(https://cdn.shopify.com/s/files/1/0030/6003/9729/products/il_fullxfull.1619712634_nn9z_452x.jpg?v=1556590059);
-    background-repeat: no-repeat;
-    background-size: 50px 50px;
-    background-position: center;
-    opacity: 0.5; */
     background-color: black;
     color: red;
 }
