@@ -16,14 +16,6 @@ body {
     visibility: hidden;
   }
 
-/* .disappear {
-    display: none;
-}
-
-.reappear {
-    display: block;
-} */
-
 .jumbo {
     color: #2A3D45;
     position: relative;
@@ -61,7 +53,7 @@ body {
 
 .card-container {
     justify-content: center;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .my-card {
@@ -69,7 +61,7 @@ body {
     background-color: #e9ecef;
     box-shadow: 10px 15px 8px -6px rgb(34, 34, 34);
     height: 200px;
-    margin: 9px;
+    /* margin: 9px; */
     overflow: hidden;
 }
 
@@ -88,9 +80,10 @@ body {
 }
 
 .Gryffindor {
-    background: url(https://lh3.googleusercontent.com/proxy/RDhqWtbAMG-SYdods1xtLMWd8BhP7qd9BfSI9pPur88s4v6CooAOYZkeSJVsESRUqP3sB_ONk2lDx6OF6HhFwQncyMhGeKmW5oTXmoNTS5rdSaTiaxtjzq4sNYM8-fEiXUWCyy3BexgNw3gfxuYZfwoS-ZUqgqlKKOBmftocy7J01tuMXBUZr0pkzJ2Gm4SueQ);
+    background: url(https://wallpapercave.com/wp/HSKR6rp.jpg);
     background-repeat: no-repeat;
-    background-size: 404px 205px;
+    background-size: 550px 346px;
+    background-position: center;
     color: white;
     font-weight: 700;
     font-size: x-large;
@@ -104,7 +97,8 @@ body {
 .Hufflepuff {
     background: url(https://wallpapercave.com/wp/wp1958758.png);
     background-repeat: no-repeat;
-    background-size: 404px 205px;
+    background-size: 550px 346px;
+    background-position: center;
     color: white;
     font-weight: 700;
     font-size: x-large;
@@ -118,7 +112,8 @@ body {
 .Ravenclaw {
     background: url(https://cdn.hipwallpaper.com/i/94/0/hJAjKC.jpg);
     background-repeat: no-repeat;
-    background-size: 404px 205px;
+    background-size: 550px 346px;
+    background-position: center;
     color: white;
     font-weight: 700;
     font-size: x-large;
@@ -132,7 +127,8 @@ body {
 .Slytherin {
     background: url(https://www.lefthudson.com/wp-content/uploads/2019/11/slytherin-desktop-wallpaper-new-slytherin-wallpaper-hd-this-month-of-slytherin-desktop-wallpaper.jpg);
     background-repeat: no-repeat;
-    background-size: 404px 205px;
+    background-size: 550px 346px;
+    background-position: center;
     color: white;
     font-weight: 700;
     font-size: x-large;
@@ -143,7 +139,13 @@ body {
 		1px 1px 0 #000; 
 }
 
+.card-separation {
+    margin: 10px 0;
+}
+
 .expelled {
+    position: relative;
+    top: 15px;
     font-size: x-large;
 }
 
