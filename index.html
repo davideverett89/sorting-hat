@@ -6,34 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./main.css">
 </head>
 <body class="container-fluid">
     <div class="row">
-      <div class="jumbotron jumbo col-xl-10">
-        <h1 class="display-4">Welcome to Hog Warts!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <div class="jumbotron jumbo col-xl-11">
+        <h1 class="display-4">Welcome to Hogwarts!</h1>
+        <h3 class="display-5">Meet the Sorting Hat:</h3>
+        <p class="lead">‘Oh, you may not think I’m pretty, But don’t judge on what you see, I’ll eat myself if you can find a smarter hat than me.’</p>
         <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
         <div class="lead">
-            <button id="show-form" class="btn btn-primary btn-lg">Let's Get Started!</button>
+            <button id="show-form" class="btn btn-dark btn-lg">Wear The Hat!</button>
         </div>
       </div>
-      <form id="name-form" class="jumbo name-form disappear col-xl-10">
+    </div>
+    <div class=row>
+      <form id="name-form" class="jumbo name-form disappear col-xl-11">
           <header>
               <h2>Enter First Year's Name</h2>
           </header>
           <div class="form-group name-box">
             <label for="studentName">Student:</label>
             <input type="text" class="form-control form-box" id="student-name" aria-describedby="userName">
-            <button id="sort-student" class="btn btn-primary">Sort!</button>
+            <button id="sort-student" class="btn btn-dark">Sort!</button>
           </div>
       </form>
     </div>
+    </div>
     <div class="row">
-      <div id="root" class="card-container d-flex row col-xl-12"></div>
-      <div id="expelled" class="card-container d-flex row col-xl-12"></div>
+      <div id="root" class="card-container d-flex row col-xl-11"></div>
+    </div>
+    <div class="row">
+      <div id="expelled" class="card-container d-flex row col-xl-11"></div>
     </div>
     <script src="new.js"></script>
 </body>
