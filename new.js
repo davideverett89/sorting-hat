@@ -40,11 +40,13 @@ const sortStudent = () => {
 const printStudents = (arr) => {
     let domString = "";
     for (let i = 0; i < arr.length; i++) {
-        domString += `<div class="${arr[i].house} card text-center my-card col-3">`;
-        domString +=    '<div class="card-body body-card">';
-        domString +=        `<h5 class="card-title new-name">${arr[i].name.charAt(0).toUpperCase() + arr[i].name.slice(1)}</h5>`;
-        domString +=        `<p class="card-text new-house ">${arr[i].house}</p>`;
-        domString +=        `<button class="btn btn-dark btn-class" id="${arr[i].name}-${arr[i].house}-${i}">Expel</button>`;
+        domString += '<div class="col-4 card-separation">';
+        domString +=    `<div class="${arr[i].house} card text-center my-card">`;
+        domString +=        '<div class="card-body body-card">';
+        domString +=            `<h5 class="card-title new-name">${arr[i].name.charAt(0).toUpperCase() + arr[i].name.slice(1)}</h5>`;
+        domString +=            `<p class="card-text new-house ">${arr[i].house}</p>`;
+        domString +=            `<button class="btn btn-dark btn-class" id="${arr[i].name}-${arr[i].house}-${i}">Expel</button>`;
+        domString +=        '</div>';
         domString +=    '</div>';
         domString += '</div>';
     }
@@ -54,11 +56,13 @@ const printStudents = (arr) => {
 const printVoldemortsArmy = (arr) => {
     let domString = "";
     for (let i = 0; i < arr.length; i++) {
-        domString += '<div class="voldemort card text-center my-card col-3">';
-        domString +=    '<div class="card-body body-card">';
-        domString +=        `<h5 class="card-title new-name">${arr[i][0].name}</h5>`;
-        domString +=        `<p class="card-text new-house ">Expelled from: ${arr[i][0].house}</p>`;
-        domString +=        '<p class="expelled">Member of the Death Eaters!</p>'
+        domString += '<div class="col-4 card-separation">';
+        domString +=    '<div class="voldemort card text-center my-card">';
+        domString +=        '<div class="card-body body-card">';
+        domString +=            `<h5 class="card-title expelled">${arr[i][0].name}</h5>`;
+        domString +=            `<p class="card-text expelled">Expelled from: ${arr[i][0].house}</p>`;
+        domString +=            '<p class="expelled">Member of the Death Eaters!</p>'
+        domString +=        '</div>';
         domString +=    '</div>';
         domString += '</div>';
       }
