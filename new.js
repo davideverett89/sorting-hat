@@ -3,7 +3,7 @@ const voldemortsArmy = [];
 
 const showForm = () => {
     const element = document.getElementById("name-form");
-    element.classList.add("reappear");
+    element.classList.add("visible");
 }
 
 const createNewStudent = (name, house) => {
@@ -40,7 +40,7 @@ const sortStudent = () => {
 const printStudents = (arr) => {
     let domString = "";
     for (let i = 0; i < arr.length; i++) {
-        domString += `<div class="${arr[i].house} card text-center my-card col-lg-3">`;
+        domString += `<div class="${arr[i].house} card text-center my-card col-3">`;
         domString +=    '<div class="card-body body-card">';
         domString +=        `<h5 class="card-title new-name">${arr[i].name.charAt(0).toUpperCase() + arr[i].name.slice(1)}</h5>`;
         domString +=        `<p class="card-text new-house ">${arr[i].house}</p>`;
@@ -54,7 +54,7 @@ const printStudents = (arr) => {
 const printVoldemortsArmy = (arr) => {
     let domString = "";
     for (let i = 0; i < arr.length; i++) {
-        domString += '<div class="voldemort card text-center my-card col-lg-3">';
+        domString += '<div class="voldemort card text-center my-card col-3">';
         domString +=    '<div class="card-body body-card">';
         domString +=        `<h5 class="card-title new-name">${arr[i][0].name}</h5>`;
         domString +=        `<p class="card-text new-house ">Expelled from: ${arr[i][0].house}</p>`;
@@ -70,7 +70,6 @@ const clickHandler = (e) => {
     for (let i = 0; i < admittedStudents.length; i++) {
         if (buttonId === `${admittedStudents[i].name}-${admittedStudents[i].house}-${i}`) {
             let expelledStudent = admittedStudents.splice(i, 1);
-            console.log(expelledStudent);
             voldemortsArmy.push(expelledStudent);
         }
     }
