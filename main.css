@@ -17,12 +17,17 @@ body {
   }
 
 .jumbo {
-    color: #2A3D45;
-    position: relative;
-    width: 85%;
     background-color: #BCAC9B;
     margin: 10px auto;
     box-shadow: 10px 15px 8px -6px rgb(34, 34, 34);
+}
+
+.sorting-hat {
+    display: inline-block;
+    position: relative;
+    left: 600px;
+    width: 100px;
+    height: 100px;
 }
 
 .page-footer {
@@ -30,30 +35,27 @@ body {
 }
 
 
-.form-box {
+/* .form-box {
     width: 300px;
-}
+} */
 
 .name-form {
-    color: #2A3D45;
-    height: 150px;
-    border-radius: 5px;
-    padding: 25px 10px 25px 150px;
+    border-radius: 5px 5px 0 0;
+    padding: 25px 10px 25px 100px;
     background-color: #BCAC9B;
 }
 
+input {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .name-box {
-    display: flex;
-    margin: 20px;
     width: 75%;
-    padding-left: 80px;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
 .card-container {
     justify-content: center;
-    /* margin: 0 auto; */
 }
 
 .my-card {
@@ -61,7 +63,6 @@ body {
     background-color: #e9ecef;
     box-shadow: 10px 15px 8px -6px rgb(34, 34, 34);
     height: 200px;
-    /* margin: 9px; */
     overflow: hidden;
 }
 
@@ -73,10 +74,11 @@ body {
 
 .new-name {
     font-size: 35px;
+    font-weight: 900;
 }
 
 .new-house {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .Gryffindor {
@@ -85,7 +87,7 @@ body {
     background-size: 550px 346px;
     background-position: center;
     color: white;
-    font-weight: 700;
+    font-weight: 900;
     font-size: x-large;
     text-shadow:
 		-1px -1px 0 #000,
@@ -100,7 +102,7 @@ body {
     background-size: 550px 346px;
     background-position: center;
     color: white;
-    font-weight: 700;
+    font-weight: 900;
     font-size: x-large;
     text-shadow:
 		-1px -1px 0 #000,
@@ -115,7 +117,7 @@ body {
     background-size: 550px 346px;
     background-position: center;
     color: white;
-    font-weight: 700;
+    font-weight: 900;
     font-size: x-large;
     text-shadow:
 		-1px -1px 0 #000,
@@ -130,7 +132,7 @@ body {
     background-size: 550px 346px;
     background-position: center;
     color: white;
-    font-weight: 700;
+    font-weight: 900;
     font-size: x-large;
     text-shadow:
 		-1px -1px 0 #000,
@@ -146,7 +148,7 @@ body {
 .expelled {
     position: relative;
     top: 15px;
-    font-size: x-large;
+    font-size: large;
 }
 
 .voldemort {
