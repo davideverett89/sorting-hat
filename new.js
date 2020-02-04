@@ -12,6 +12,7 @@ const createNewStudent = (name, house) => {
         house: house
     }
     admittedStudents.push(studentObj);
+    admittedStudents.sort((a, b) => a.name.localeCompare(b.name));
     printStudents(admittedStudents);
 }
 
@@ -32,8 +33,8 @@ const sortStudent = () => {
     const houses = ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"];
     let studentName = document.getElementById("student-name").value;
     let randomNum = Math.floor(Math.random() * houses.length);
-    (studentName === "" || studentName === " ") ? alert("Please enter a name.") : 
-    (studentName.length > 40) ? alert("Student name is too long.") :
+    (/^\s*$/.test(studentName)) ? alert("Please enter a name.") : 
+    (studentName.length > 20) ? alert("Student name is too long.") :
     createNewStudent(studentName, houses[randomNum]);
 }
 
