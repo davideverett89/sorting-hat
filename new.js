@@ -40,7 +40,7 @@ const sortStudent = () => {
 const printStudents = (arr) => {
     let domString = "";
     for (let i = 0; i < arr.length; i++) {
-        domString += '<div class="col-4 card-separation">';
+        domString += '<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 card-separation">';
         domString +=    `<div class="${arr[i].house} card text-center my-card">`;
         domString +=        '<div class="card-body body-card">';
         domString +=            `<h5 class="card-title new-name">${arr[i].name.charAt(0).toUpperCase() + arr[i].name.slice(1)}</h5>`;
@@ -56,12 +56,12 @@ const printStudents = (arr) => {
 const printVoldemortsArmy = (arr) => {
     let domString = "";
     for (let i = 0; i < arr.length; i++) {
-        domString += '<div class="col-4 card-separation">';
+        domString += '<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 card-separation">';
         domString +=    '<div class="voldemort card text-center my-card">';
         domString +=        '<div class="card-body body-card">';
         domString +=            `<h5 class="card-title expelled">${arr[i][0].name}</h5>`;
         domString +=            `<p class="card-text expelled">Expelled from: ${arr[i][0].house}</p>`;
-        domString +=            '<p class="expelled">Member of the Death Eaters!</p>'
+        domString +=            '<p class="expelled">Member of Voldemort\'s Army!</p>'
         domString +=        '</div>';
         domString +=    '</div>';
         domString += '</div>';
