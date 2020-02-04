@@ -36,7 +36,7 @@ body {
 
 .name-form {
     border-radius: 5px 5px 0 0;
-    padding: 25px 10px 25px 53px;
+    padding: 25px 10px 25px 88px;
     background-color: #BCAC9B;
 }
 
@@ -68,12 +68,12 @@ input {
 }
 
 .new-name {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 900;
 }
 
 .new-house {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .Gryffindor {
